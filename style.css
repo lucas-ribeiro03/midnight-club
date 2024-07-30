@@ -180,9 +180,18 @@ footer p{
 }
 
 @media (max-width: 768px){
+
+    nav{
+        height: 5%;
+    }
+
+    nav .logo img{
+        width: 200px;
+    }
+
     nav .links {
         position: absolute;
-        top: 78px;
+        top: 39px;
         width: 100%;
         height: calc(100vh);
         background-color: #224373;
@@ -216,6 +225,14 @@ footer p{
     
     #sobre p{
         max-width: max-content;
+        text-align: center;
+    }
+
+    #sobre h1{
+        text-align: center;
+    }
+
+    #membros h1{
         text-align: center;
     }
 }
