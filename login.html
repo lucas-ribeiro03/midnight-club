@@ -10,13 +10,15 @@
     <main>
         <h1>Fazer Login</h1>
         <p>Bem vindo a Midnight Club <br> Faça login para continuar! <br><br>Não tem uma conta? <a href="criar_conta.html"> Criar conta</a></p>
-        <form action="index.html">
-            <input type="text" placeholder="Email ou nome de usuário">
-            <input type="password" placeholder="Senha">
+        <form id="login_form">
+            <input type="text" id="login_email" placeholder="Email ou nome de usuário" required>
+            <input type="password" id="login_senha" placeholder="Senha" required>
             <button type="submit">Entrar</button>
         </form>
 
         <p>Esqueceu sua senha?<a href="rec_senha.html"> Recuperar senha</a></p>
     </main>
+
+    <script src="login.js"></script>
 </body>
 </html>
