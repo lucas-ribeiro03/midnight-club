@@ -19,7 +19,7 @@
             <a href="#sobre">Sobre</a>
             <a href="#membros">Membros</a>
             <a href="#social">Social</a>
-            <a href="#">Minha conta</a>
+            <a href="login.html" id="login-link">Fazer Login</a>
         </div>
     </nav>
 
@@ -70,9 +70,20 @@
             <a href="https://www.instagram.com/themidnigthclub.666/?hl=pt" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a>
             <a href=""><i class="fa-brands fa-whatsapp whatsapp"></i></a>
         </div>
-        <p>&copy; 2024 Midnight Club. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Midnight Club. Todos os direitos reservados.
+            <br>Developed by mercurykhs.
+        </p>
     </footer>
 
+    <script>
+        window.onload = function(){
+            if (localStorage.getItem('isLoggedIn') === "true"){
+                document.getElementById('login-link').innerText = 'Minha Conta';
+                document.getElementById('login-link').href = 'minha_conta.html';
+            }
+        };
+    </script>
+    <script src="login.js"></script>
     <script src="mobile-nav.js"></script>
 </body>
 </html>

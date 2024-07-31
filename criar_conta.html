@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="criar_conta.css">
+    <title>Cadastro de conta</title>
+</head>
+<body>
+    <main>
+        <h1>Criar conta</h1>
+        <p>Bem vindo a MidnightClub! <br><br>Crie sua conta e junte-se a nossa família!</p>
+        <p>Já tem uma conta? <a href="login.html">Fazer login</a></p>
+        <form id="form_cadastro">
+            <div class="info_conta">
+                <input type="text" id="cadastro_celular" placeholder="Número de celular *" required>
+                <input type="email" id="cadastro_email" placeholder="Email *" required>
+                <input type="password" id="cadastro_senha" placeholder="Senha *" required>
+            </div>
+                <div class="info_pessoal">
+                <label for="cadastro_data_nasc">Data de nascimento *</label>
+                <input type="date" id="cadastro_data_nasc"required>
+                <input type="text" id="cadastro_nome" placeholder="Seu nome *" required>
+                <input type="text" id="cadastro_endereco" placeholder="Endereço ex: Rua da capelinha, 10" required>
+            </div>
+            <button type="submit">Criar conta</button>
+        </form>
+    </main>
+
+    <script src="criar_conta.js"></script>
+</body>
+</html>

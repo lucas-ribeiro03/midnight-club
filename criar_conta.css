@@ -24,7 +24,7 @@ main{
     flex-direction: column;
     justify-content: center;
     width: 45%;
-    height: 65%;
+    height: 85%;
     gap: 25px;
 }
 
@@ -49,21 +49,27 @@ form{
     gap: 8px;
 }
 
+form div{
+    margin-top: 20px;
+}
+
+form div input{
+    margin-top: 10px;
+}
+
 input{
     height: 40px;
     width: 100%;
     padding: 15px;
-    border: none;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    border-radius: 0px;
-    color: #fff;
-    background-color: #224373;
-    border-bottom: solid #fff 1px;
+    border-radius: 5px;
+    color: #000;
+    background-color: #fff;
 }
 
 input::placeholder{
-    color: #fff;
+    color: #000;
 }
 
 input:focus{
