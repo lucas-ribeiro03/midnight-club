@@ -19,7 +19,7 @@
             <a href="#sobre">Sobre</a>
             <a href="#membros">Membros</a>
             <a href="#social">Social</a>
-            <a href="login.html" id="login-link">Fazer Login</a>
+            <a href="login/login.html" id="login-link">Fazer Login</a>
         </div>
     </nav>
 
@@ -79,11 +79,11 @@
         window.onload = function(){
             if (localStorage.getItem('isLoggedIn') === "true"){
                 document.getElementById('login-link').innerText = 'Minha Conta';
-                document.getElementById('login-link').href = 'minha_conta.html';
+                document.getElementById('login-link').href = '../minha_conta/minha_conta.html';
             }
         };
     </script>
-    <script src="login.js"></script>
+    <script src="login/login.js"></script>
     <script src="mobile-nav.js"></script>
 </body>
 </html>

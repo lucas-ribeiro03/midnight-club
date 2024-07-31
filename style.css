@@ -191,7 +191,7 @@ footer p{
 
     nav .links {
         position: absolute;
-        top: 39px;
+        top: 100%;
         width: 100%;
         height: calc(100vh);
         background-color: #224373;
